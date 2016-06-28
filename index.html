@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Movie Theatre</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+  </head>
+  <body class="container">
+    <h1>The Movie Theatre</h1>
+    <h3>Please make your selection: </h3>
+    <form id="blanks">
+      <h4>Please select the movie: </h4?>
+      <select class="form-control" id="title">
+        <option value="Star Wars">Star Wars</option>
+        <option value="A Love So Far Away">A Love So Far Away</option>
+        <option value="Chicken Big">Chicken Big</option>
+        <option value="Water Tower">Water Tower</option>
+      </select>
+      <h4>Please select the time: </h4?>
+      <select class="form-control" id="time">
+        <option value="12:00PM">12:00PM</option>
+        <option value="2:00PM">2:00PM</option>
+        <option value="4:00PM">4:00PM</option>
+        <option value="6:00PM">6:00PM</option>
+      </select>
+      <h4>Are you over the age of 65?</h4?>
+      <div class="radio">
+        <label>
+          <input type="radio" name="age" value="yes">
+          Yes
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="age" value="no" checked>
+          No
+        </label>
+      </div>
+      <button type="submit" class="btn btn-primary">Purchase!</button>
+    </form>
+    <div id="output">
+      <p> Here is your ticket: Name: <span id = "nameOutput"></span>, Time: <span id = "timeOutput"></span>, Price: <span id = "priceOutput"></span>
+
+      </p>
+
+    </div>
+  </body>
+</html>
